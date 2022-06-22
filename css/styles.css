@@ -57,14 +57,17 @@
 цвет контактов футера  #FFFFFF;
 цвет заливки кнопки #2196F38
 title-bigger заголовки h2
-title заголовки h3
+title-portfolio заголовки h2 для портфолио 
+title заголовки h3 для студио
+title-uppercase заглавные заголовки
 height-title эффективные решения
 main-title фон для еффективные решения
 button-service кнопка заказать услугу
-button-list список кнопок для портфолио
-list-deroration плюшки для кнопок студия портфолио
-address-list кнопка контакты*
-text весь пепельный цвет в заголовках/
+button-deroration кнопоки для портфолио (все, веб-сайты)
+list-deroration ховер фокус для кнопок студия и портфолио в хедере 
+address-list кнопка контакты
+text пепельный текст в студио
+text-portfolio пепельный текст в портфолио"*/
 
 /*Variables*/
 :root {
@@ -80,16 +83,21 @@ text весь пепельный цвет в заголовках/
 
 
 /*Body*/
-.hero{ color: var(--color-mainbackground);
-  font-family: Roboto, sans-serif;}
-  .web{ font-family: Raleway, sant-serif;
-        color: var(--color-web);
+.body{ background-color:var(--color-mainbackground);
+  font-family: Roboto, sans-serif;
+  font-size: 14px;
+  letter-spacing: 0.3;}
+
+
+/*logo*/
+.web{ font-family: Raleway, sant-serif;
+    color: var(--color-web);
     font-weight: 700;
     font-size: 26px;
     line-height: 1.2;}
 
 
-  .studio{font-family: Raleway, sant-serif;
+.studio{font-family: Raleway, sant-serif;
     color: var(--color-studio);
     font-weight: 700;
     font-size: 26px;
@@ -100,62 +108,100 @@ text весь пепельный цвет в заголовках/
 /*Header*/
 .information {
     background-color: var(--color-heder);}
-   .address-list{ color: var(--color-title);
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.1;} 
-   .list-decoration {color: var(--color-title);}
-   .list-decoration:hover{color: var(--color-web);}
+.address-list{ color: var(--color-title);
+               text-decoration: none;
+               list-style: none;
+               font-weight: 500;
+               line-height: 1.1;} 
+   .list-decoration {color: var(--color-title);
+                    text-decoration: none;
+                    list-style: none;}
+   .list-decoration:hover {color: var(--color-web);}
    .list-decoration:focus {color: var(--color-web);}
+   .current{color: var(--color-web);}
+   
 
     .our-contacts{ color: var(--color-text);
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.1;}
+                   text-decoration: none;
+                   list-style: none;
+                   font-weight: 500;
+                   line-height: 1.1;}
     .our-contacts:hover {color: var(--color-web);}
     .our-contacts:focus {color: var(--color-web);}
 
-  .button-list{ background-color: var(--color-button); color: var(--color-title);}
-  .button-decoration:hover {background-color: var(--color-web); color: var(--color-heder);}
+  .button-decoration{ background-color: var(--color-button);
+                color: var(--color-title);}
+  .button-decoration:hover{ color: var(--color-web);}
+  .button-decoration:focus{color: var(--color-web);}
+
+
+  
+
   .height-title{ color: var(--color-heder);
                  font-weight: 900;
                  font-size: 44px;
                  line-height: 1.4;
                  text-align: center;
                  text-transform: uppercase;}
-  .button-service{ background-color: var(--color-web); color: var(--color-heder); font-weight: 700;
-                 font-size: 16px;
-                 line-height: 1.9;}
+
+  .button-service{ background-color: var(--color-web);
+                   color: var(--color-heder);
+                   font-weight: 700;
+                   font-size: 16px;
+                   line-height: 1.9;}
                  
   .main-title{ background-color: var(--color-backround);}
+
   .text{ color: var(--color-text);
-         font-weight: 400;
-         font-size: 14px;
          line-height: 1.8;}
   
   .title{ color: var(--color-title);
           font-weight: 500;
           font-size: 16px;
-          line-height: 1.2px;}
+          line-height: 1.2;}
+
+  .title-portfolio {font-weight: 700;
+                    font-size: 18px;
+                    line-height: 2;
+                    letter-spacing: 0.06em;}
+
+  .text-portfolio { color: var(--color-text); 
+                    font-size: 16px;
+                    line-height: 1.9;}
+
   .title-bigger {color: var(--color-title);
                 font-weight: 700;
                 font-size: 36px;
                 line-height: 1.2;}
+
+ .title-uppercase { color: var(--color-title);
+                 font-weight: 500;
+                 font-size: 14px;
+                 line-height: 1.2;
+                 text-transform: uppercase;}
+
+  .our-croup {background-color:var(--color-button);}
+
   .text-profession{ color: var(--color-text);
-         font-weight: 400;
-         font-size: 16px;
-         line-height: 1.2;}
+                    font-size: 16px;
+                    line-height: 1.2;}
+
   /*Footer*/
   .lover-part{ background-color: var(--color-backround);}
-  .studio-two {font-family: Raleway, sant-serif; color: var(--color-heder);
+
+  .studio-two {font-family: Raleway, sant-serif;
+               color: var(--color-heder);
                font-weight: 700;
                font-size: 26px;
                line-height: 1.2;}
-  .map{ color: var(--color-heder);
-                   font-style: normal;
-                   font-weight: 400;
-                   font-size: 14px;
-                   line-height: 1.7;}
+
+  .map{ color:rgba(240, 231, 231, 1);
+        font-style: normal;
+        font-size: 14px;
+        line-height: 1.7;}
+
+  .map-fact{color: var(--color-heder);}
+
   .map:hover{color: var(--color-web); }      
 
 
