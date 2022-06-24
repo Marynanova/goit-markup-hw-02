@@ -59,7 +59,7 @@
 title-bigger заголовки h2
 title-portfolio заголовки h2 для портфолио 
 title заголовки h3 для студио
-title-uppercase заглавные заголовки
+title-uppercase заглавные заголовки для студио
 height-title эффективные решения
 main-title фон для еффективные решения
 button-service кнопка заказать услугу
@@ -83,25 +83,28 @@ text-portfolio пепельный текст в портфолио"*/
 
 
 /*Body*/
-.body{ background-color:var(--color-mainbackground);
+.body{ background-color: var(--color-heder);
   font-family: Roboto, sans-serif;
-  font-size: 14px;
-  letter-spacing: 0.3;}
+  font-size: 14px;}
 
 
 /*logo*/
-.web{ font-family: Raleway, sant-serif;
+.web{ font-family: Raleway, sant-serif; 
     color: var(--color-web);
     font-weight: 700;
     font-size: 26px;
-    line-height: 1.2;}
+    line-height: 1.2;
+    letter-spacing: 0.03em;}
+
+.web-none{ text-decoration: none;}    
 
 
 .studio{font-family: Raleway, sant-serif;
     color: var(--color-studio);
     font-weight: 700;
     font-size: 26px;
-    line-height: 1.2;}
+    line-height: 1.2;
+    letter-spacing: 0.03em;}
 
    
 
@@ -112,10 +115,13 @@ text-portfolio пепельный текст в портфолио"*/
                text-decoration: none;
                list-style: none;
                font-weight: 500;
-               line-height: 1.1;} 
+               line-height: 1.1;
+               letter-spacing: 0.02em;} 
    .list-decoration {color: var(--color-title);
                     text-decoration: none;
-                    list-style: none;}
+                    list-style: none;
+                    letter-spacing: 0.02em;}
+                                        
    .list-decoration:hover {color: var(--color-web);}
    .list-decoration:focus {color: var(--color-web);}
    .current{color: var(--color-web);}
@@ -125,14 +131,19 @@ text-portfolio пепельный текст в портфолио"*/
                    text-decoration: none;
                    list-style: none;
                    font-weight: 500;
-                   line-height: 1.1;}
+                   line-height: 1.1;
+                   letter-spacing: 0.02em;}
     .our-contacts:hover {color: var(--color-web);}
     .our-contacts:focus {color: var(--color-web);}
 
   .button-decoration{ background-color: var(--color-button);
-                color: var(--color-title);}
-  .button-decoration:hover{ color: var(--color-web);}
-  .button-decoration:focus{color: var(--color-web);}
+                      color: var(--color-title);
+                      font-weight: 500;
+                      font-size: 16px;
+                      line-height: 1.6;
+                      letter-spacing: 0.03em;}
+  .button-decoration:hover{ background-color: var(--color-web); color: var(--color-heder);}
+  .button-decoration:focus{background-color: var(--color-web); color: var(--color-heder);}
 
 
   
@@ -141,6 +152,7 @@ text-portfolio пепельный текст в портфолио"*/
                  font-weight: 900;
                  font-size: 44px;
                  line-height: 1.4;
+                 letter-spacing: 0.06em;
                  text-align: center;
                  text-transform: uppercase;}
 
@@ -148,17 +160,20 @@ text-portfolio пепельный текст в портфолио"*/
                    color: var(--color-heder);
                    font-weight: 700;
                    font-size: 16px;
-                   line-height: 1.9;}
+                   line-height: 1.9;
+                   letter-spacing: 0.06em;}
                  
   .main-title{ background-color: var(--color-backround);}
 
   .text{ color: var(--color-text);
-         line-height: 1.8;}
+         line-height: 1.8;
+         letter-spacing: 0.03em;}
   
   .title{ color: var(--color-title);
           font-weight: 500;
           font-size: 16px;
-          line-height: 1.2;}
+          line-height: 1.2;
+          letter-spacing: 0.03em;}
 
   .title-portfolio {font-weight: 700;
                     font-size: 18px;
@@ -167,24 +182,28 @@ text-portfolio пепельный текст в портфолио"*/
 
   .text-portfolio { color: var(--color-text); 
                     font-size: 16px;
-                    line-height: 1.9;}
+                    line-height: 1.9;
+                    letter-spacing: 0.03em;}
 
   .title-bigger {color: var(--color-title);
                 font-weight: 700;
                 font-size: 36px;
-                line-height: 1.2;}
+                line-height: 1.2;
+                letter-spacing: 0.03em;}
 
  .title-uppercase { color: var(--color-title);
-                 font-weight: 500;
+                 font-weight: 700;
                  font-size: 14px;
                  line-height: 1.2;
+                 letter-spacing: 0.03em;
                  text-transform: uppercase;}
 
   .our-croup {background-color:var(--color-button);}
 
   .text-profession{ color: var(--color-text);
                     font-size: 16px;
-                    line-height: 1.2;}
+                    line-height: 1.2;
+                    letter-spacing: 0.03em;}
 
   /*Footer*/
   .lover-part{ background-color: var(--color-backround);}
@@ -193,14 +212,20 @@ text-portfolio пепельный текст в портфолио"*/
                color: var(--color-heder);
                font-weight: 700;
                font-size: 26px;
-               line-height: 1.2;}
+               line-height: 1.2;
+               letter-spacing: 0.03em;
+               text-decoration: none;}
 
-  .map{ color:rgba(240, 231, 231, 1);
+  .map{ color:rgba(255, 255, 255, 0.6);
         font-style: normal;
         font-size: 14px;
-        line-height: 1.7;}
+        line-height: 1.7;
+        letter-spacing: 0.03em;
+        text-decoration: none;}
+  .map:hover { color: var(--color-web);}
 
-  .map-fact{color: var(--color-heder);}
+  .map-fact{color: var(--color-heder);
+            text-decoration: none;}
 
   .map:hover{color: var(--color-web); }      
 
